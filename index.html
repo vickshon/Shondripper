@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shon Dripper Bot - Deriv Trading</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Shon Dripper Bot</h1>
+    <p>Trade Deriv in real-time. Connect, trade, and manage payments.</p>
+    <button id="login-btn">Connect with Deriv</button>
+  </header>
+  <main id="app">
+    <section id="status"></section>
+    <section id="actions" style="display:none;">
+      <h2>Trading Actions</h2>
+      <button id="trade-btn">Execute Trade</button>
+      <button id="payments-btn">View Payments</button>
+      <div id="results"></div>
+    </section>
+    <section id="bot-controls" style="display:none;">
+      <h2>Automated Trading Bot</h2>
+      <div id="bot-status">Bot not started.</div>
+      <button id="start-bot">Start Bot</button>
+      <button id="stop-bot">Stop Bot</button>
+      <div id="bot-logs" style="margin-top:1em; max-height:200px; overflow:auto; background:#eee; padding:1em; border-radius:4px;"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Powered by Deriv | Hosted on GitHub Pages</p>
+  </footer>
+  <script src="app.js"></script>
+  <script src="bot.js"></script>
+</body>
+</html>
